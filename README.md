@@ -2,6 +2,76 @@
 
 > A prelaunch sign up double opt-in microservice
 
+
+## Subscribe [/{email}]
+
++ Parameters
+
+    + email: name@example.com (string) - Subscribers email.
+
+
+### Send email [GET]
+
++ Request JSON Message
+
+    + Headers
+
+            Accept: application/json
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "sent": true
+            }
+
+## OptIn [/{uuid}]
+
++ Parameters
+
+    + uuid: 5a40e9b5b753c100013d6cba (string) - Unique identifier.
+
+
+### Authenticate [GET]
+
++ Request JSON Message
+
+    + Headers
+
+            Accept: application/json
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "authenticate": true
+            }
+
+## OptOut [/{unsubscribe}]
+
++ Parameters
+
+    + unsubscribe: 5a40e9b5b753c100013d6cba (string) - Unique identifier.
+
+
+### Unsubscribe [GET]
+
++ Request JSON Message
+
+    + Headers
+
+            Accept: application/json
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+               "unsubscribed": "name@example.com"
+            }
+
 ```bash
 # Create `.env` file
 cat > .env << EOL
