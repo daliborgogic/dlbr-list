@@ -7,13 +7,13 @@
     "dev": "DEBUG=* node node_modules/.bin/micro-dev"
   },
   "devDependencies": {
-    "micro-dev": "^2.1.1"
+    "micro-dev": "^2.2.2"
   },
   "dependencies": {
-    "debug": "^3.1.0",
-    "micro": "^9.0.2",
-    "mongoose": "^4.13.7",
-    "nodemailer": "^4.4.1",
-    "nodemailer-postmark-transport": "^1.3.0"
+    "debug": "^3.2.6",
+    "micro": "^9.3.3",
+    "mongoose": "^4.13.17",
+    "nodemailer": "^4.6.8",
+    "nodemailer-postmark-transport": "^1.4.0"
   }
 }
