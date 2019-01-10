@@ -14,6 +14,6 @@
     "micro": "^9.3.3",
     "mongoose": "^4.13.17",
     "nodemailer": "^4.6.8",
-    "nodemailer-postmark-transport": "^1.4.0"
+    "nodemailer-postmark-transport": "^2.0.0"
   }
 }
